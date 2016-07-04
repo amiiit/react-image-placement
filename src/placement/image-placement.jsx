@@ -1,7 +1,7 @@
 import React, {PropTypes as T} from 'react';
 import ReactDOM from 'react-dom';
 import cx from 'classnames';
-import {loadImageFromUrl} from './utils';
+import {loadImageFromUrl} from '../utils';
 import Zooming from './zooming.jsx';
 import css from './image-placement.less'
 
