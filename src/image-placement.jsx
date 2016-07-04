@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import cx from 'classnames';
 import {loadImageFromUrl} from './utils';
 import Zooming from './zooming.jsx';
+import css from './image-placement.less'
 
-class MoveableImageBlock extends React.Component {
+class ImagePlacement extends React.Component {
 
     static propTypes = {
         currentImageSrc: T.string,
@@ -108,7 +109,7 @@ class MoveableImageBlock extends React.Component {
         const {currentImageSrc, fallback} = this.props;
 
         return (
-            <div className={this.props.className}
+            <div className={this.props.className || css.imagePlacement}
                  style={this.props.style}
                  ref='moveableImageRoot'>
                 {
@@ -129,4 +130,4 @@ class MoveableImageBlock extends React.Component {
     }
 }
 
-export default MoveableImageBlock;
+export default ImagePlacement;

@@ -1,4 +1,9 @@
-:local(.app){
+:local(.app) {
     width: 100%;
     background: green;
+}
+
+:local(.imagePlacement) {
+    composes: imagePlacement from '../src/image-placement.less';
+    height: 300px;
 }
