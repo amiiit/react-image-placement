@@ -1,0 +1,32 @@
+:local(.zooming){
+    display: flex;
+    flex-direction: column;
+
+    pointer-events: all;
+
+    :local(.button) {
+        color: white;
+        cursor: pointer;
+        pointer-events: all;
+        font-size: 24px;
+        font-weight: bold;
+        width: 44px;
+        height: 44px;
+
+        background: #383A41;
+
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    :local(.button):not(:last-child){
+        margin-bottom: 8px;
+    }
+
+    :local(.slider){
+        width: 250px;
+    }
+}
